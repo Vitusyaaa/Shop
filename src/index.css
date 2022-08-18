@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@300;600 & display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url('./img/wall.jpg');
+  color: #000;
+  font-size: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+.wrapper {
+  width: 95%;
+  margin: 30px;
+}
+header {
+  position: relative;
+}
+header .logo {
+  margin-left: 5px;
+  font-size: 55px;
+  font-weight: 600;
+}
+header .cart {
+  float: right;
+  margin-top: 3px;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+  }
+header .cart:hover,
+header .cart.active {
+  color: rgb(255, 88, 11);
+  transform: scale(1.5);
+}  
+header .shop-cart {
+  position: absolute;
+  top: 30px;
+  right: -11px;
+  width: 460px;
+  min-height: 40px;
+  background-color: rgb(254, 235, 211);
+  z-index: 1000;
+  -webkit-box-shadow: 8px 12px 19px 5px rgba(0,0,0,0.43); 
+  box-shadow: 8px 12px 19px 5px rgba(0,0,0,0.43);
+  padding: 20px;
+  padding-bottom: 0;
+}
+  header .shop-cart .empty h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+header .shop-cart .thing {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+header .shop-cart .thing img {
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+header .shop-cart .thing h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+header .shop-cart .thing p {
+  color: rgb(133, 132, 132);
+  font-weight: 600;
+}
+header .shop-cart .thing .delIcon {
+float: right;
+position: relative;
+top: -25px;
+cursor: pointer;
+transition: color, transform 500ms ease;
+width: 6%;
+}
+header .shop-cart .thing .delIcon:hover {
+  color: rgb(193, 18, 18);
+  transform: scale(1.5);
+}
+header .shop-cart .sum1, header .shop-cart .sum2 {
+  font-weight: 700;
+  margin-bottom: 15px; 
+} 
+header .shop-cart .sum2 {
+  color: rgb(204, 35, 35);
+}
+header .presenteshion {
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: 60px; */
+  margin-top: 10px;
+  background: url('./img/book.jpg') no-repeat;
+  width: 1024px;
+  background-size:contain;
+  height: 650px;
+  position: relative;
+}
+header .presenteshion::after {
+  content: 'Books are doors that take you out of four walls ...';
+  position: absolute;
+  right: 80px;
+  top: 382px;
+  left: 30px;
+  font-size: 46px;
+  color: white;
+}
+header ul.contact {
+  float:right;
+  list-style: none;
+}
+  header ul.contact li {
+    display: inline;
+    margin-left: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+  header ul.contact li:hover {
+    opacity: 0.5;
+}
+  .categories div {
+    display: inline-block;
+    padding: 10px 11px;
+    font-size: 19px;
+    background: rgba(140, 68, 68, 0.897);
+    border-radius: 50px;
+    color: rgb(232, 242, 250);
+    margin: 7px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 500ms ease;
+}
+  .categories div:hover {
+    border-color: rgb(255, 254, 167);
+    transform: scale(1.09);
+}
+  .fuul-thing-all img {
+    height: 100%;
+    transition: transform 500ms ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+  main {
+     display: flex; 
+     width: 100%; 
+     flex-wrap: wrap;
+     justify-content:space-between; 
+  
+}
+  main .thing {
+    width: 30%;
+    height: 610px;
+    margin-bottom: 50px;
+    background: rgb(238, 242, 222);
+    overflow: hidden;
+    margin-top: 30px;
+    position: relative;
+}
+  main .thing img {
+    width: 100%;
+    height: 500px; 
+    /* background-size: cover; */
+    transition: transform 500ms ease;
+    cursor: pointer;
+}
+  .fuul-thing-all {
+    position: fixed;
+    top: -110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(23, 21, 21, 0.815);
+    z-index: 9999;
+    overflow: auto;
+}
+  .fuul-thing-all > div {
+    width: 260px;
+    position: relative;
+    margin: 10% auto;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 50px;
+}
+  .fuul-thing-all img {
+    width: 100%;
+    transition: transform 500ms ease;
+    cursor: pointer;
+}
+  main .thing img:hover, .fuul-thing-all img:hover {
+    transform: scale(1.05);
+}
+  main h2, main p, main b, main h6,
+  .fuul-thing-all h2, .fuul-thing-all p, .fuul-thing-all b, .fuul-thing-all h6  {
+    margin: 10px 20px;
+    color: rgb(95, 53, 53);
+}
+  main h6 {
+    font-size: 20px;
+    color: rgb(192, 9, 9);
+}
+  main p, .fuul-thing-all p {
+    color: rgb(15, 169, 51);
+    font-size: 20px;
+    position: absolute;
+    bottom: 5px;
+}
+  main .add, 
+  .fuul-thing-all .add {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    color: rgb(241, 241, 249);
+    background:rgb(128, 66, 1);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+  main .add:hover,
+  .fuul-thing-all .add:hover {
+  transform: scale(1.5) translateZ(-5px);
+}
+  footer {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+  .fuul-thing-all .close  {
+    cursor: pointer;
+    position: absolute;
+    right: -15px;
+    margin-top: -50px;
+    width: 11%;
+    border-radius: 50%;
+    border: rgba(255, 253, 253, 0);
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: 600;
+    color: rgb(250, 250, 250);
+}
+  .fuul-thing-all .close:hover {
+    transform: scale(1.3);
+}
